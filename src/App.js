@@ -83,12 +83,12 @@ function App() {
         status: 'success',
         duration: 4000,
         isClosable: true,
-        position: 'top-right',
+        position: 'top-left',
 
       })
 
       setarray([]);
-      get_data_handle(); //check
+      get_data_handle(); 
     } catch (error) {
       console.log(error);
     }
@@ -180,7 +180,7 @@ function App() {
           mt={5}
           mb={5}
         >
-          Bookss
+          Book Ticket
         </Button>
       </div>
 
@@ -210,16 +210,16 @@ function App() {
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>You want to cancel booking</ModalHeader>
-          <ModalCloseButton />
+         
           <ModalBody>
             {/* <Lorem count={2} /> */}
           </ModalBody>
 
           <ModalFooter>
             <Button colorScheme='blue' mr={3} onClick={onClose}>
-              Close
+              No
             </Button>
-            <Button variant='ghost' onClick={handleCancelbooking}>Yes</Button>
+            <Button colorScheme='orange' onClick={handleCancelbooking}>Yes</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
