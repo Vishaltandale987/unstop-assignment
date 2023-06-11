@@ -24,7 +24,8 @@ function App() {
   const bookSeats = (seatcount) => {
     seatcount = parseInt(seatcount);
     for (let i = 0; i <= 80 - seatcount; i++) {
-      if (status.slice(i, i + seatcount).every((seat) => seat === "available")) {
+      let seatsPerRow = i < 77 ? 7 : 3;
+      if ((i % seatsPerRow) + seatcount <= seatsPerRow && status.slice(i, i + seatcount).every((seat) => seat === "available")) {
         for (let j = 0; j < seatcount; j++) {
           const seatIndex = i + j;
           bookedSeats.push(seatIndex + 1);
