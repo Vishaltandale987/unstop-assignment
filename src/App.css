@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+
+.coach {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc((100px + 1px * 2 + 5px * 2) * 7); /* width of 7 seats */
+  text-align: center;
+  margin: auto;
+}
+.input{
+  text-align: center;
+  margin: auto;
+  margin-top: 2em;
+  
+}
+
+h2{
+  font-size: x-large;
+}
+
+.seatstext{
+font-weight: bold;
+align-items: center;
+margin-left: 10px;
+}
+.tag{
+  border: 1px solid black;
+}
+.seat {
+  height: 40px;
+  width: 100px;
+  border: 1px solid #000;
+  margin: 5px;
+  text-align: center;
+  
+}
+.available {
+  background-color: rgb(169, 233, 169);
+}
+.booked {
+  background-color: rgb(197, 152, 80);
+}
+
+
+
+
+.name{
+font-weight: bold;
+}
