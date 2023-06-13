@@ -187,7 +187,7 @@ const handlereset = async () => {
           style={{
             display: "flex",
             margin: "auto",
-            width: "30%",
+            width: "40%",
           }}
         >
           <FormLabel>Select Seats</FormLabel>
@@ -202,7 +202,7 @@ const handlereset = async () => {
             border="1px"
             borderColor="gray.800"
           />
-          <p className="seatstext">No seat book {seatcounts}</p>
+          <p className="seatstext">No of seats selected {seatcounts}</p>
         </div>
 
         <Button
