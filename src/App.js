@@ -109,6 +109,7 @@ function App() {
 
     try {
 
+
       const res = await axios.put(`https://unstop-server-git-main-vishaltandale987.vercel.app/seat/cancel`, id);
       // console.log(res.data)
 
@@ -133,9 +134,40 @@ function App() {
     } catch (error) {
       console.log(error)
     }
+
+
   };
 
 
+  // console.log(status)
+const handlereset = async () => {
+
+ 
+
+
+      try {
+        let res = await axios(`https://unstop-server-git-main-vishaltandale987.vercel.app/seat/reset`)
+
+        toast({
+          title: res.data,
+          // description: "Booking Successfully cancel.",
+          status: 'success',
+          duration: 2000,
+          isClosable: true,
+          position: 'top',
+    
+        })
+      
+      } catch (error) {
+        console.log(error)
+      }
+
+  get_data_handle()
+
+
+
+
+}
 
 
   return (
@@ -204,7 +236,15 @@ function App() {
         ))}
       </div>
 
-
+      <Button
+          onClick={handlereset}
+          size="md"
+          colorScheme='red'
+          mt={5}
+          mb={5}
+        >
+          Reset Booking
+        </Button>
 
       <Modal finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
