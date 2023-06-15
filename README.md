@@ -3,7 +3,7 @@
 
 This application is a seat booking application. There are 80 seats in total, with 7 seats in a row and 3 in the last row. Users can book at most 7 seats at a time.
 
-[Frontend](https://unstop-assignment-delta.vercel.app/) - Deployed Link <br />
+[Frontend](https://unstop-assignment-um2c.vercel.app/) - Deployed Link <br />
 [Backend](https://unstop-server-git-main-vishaltandale987.vercel.app/) - Deployed Link
 
 ## Tech Stack
